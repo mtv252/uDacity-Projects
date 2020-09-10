@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="P1"
+                    android:textColor="#616161"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/p1_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="0"
+                    android:textSize="56sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-light"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp">
+
+                    <Button
+                        android:id="@+id/p1_settlement_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="10sp"
+                        android:onClick="p1_settlement"
+                        android:text="Settlement" />
+
+                    <Button
+                        android:id="@+id/p1_city_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/p1_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p1_city"
+                        android:text="City"
+                        android:textSize="10sp"/>
+
+                    <Button
+                        android:id="@+id/p1_road_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/p1_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p1_road"
+                        android:text="Longest Road"
+                        android:textSize="10sp"/>
+
+                    <Button
+                        android:id="@+id/p1_army_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/p1_road_button"
+                        android:layout_toRightOf="@id/p1_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p1_army"
+                        android:text="Largest Army"
+                        android:textSize="10sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="2dp"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:id="@+id/p2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="P2"
+                    android:textColor="#616161"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/p2_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="0"
+                    android:textSize="56sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-light"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp">
+
+                    <Button
+                        android:id="@+id/p2_settlement_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="10sp"
+                        android:onClick="p2_settlement"
+                        android:text="Settlement"
+                        />
+
+                    <Button
+                        android:id="@+id/p2_city_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/p2_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p2_city"
+                        android:text="City"
+                        android:textSize="10sp"/>
+
+                    <Button
+                        android:id="@+id/p2_road_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/p2_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p2_road"
+                        android:text="Longest Road"
+                        android:textSize="10sp"/>
+
+                    <Button
+                        android:id="@+id/p2_army_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/p2_road_button"
+                        android:layout_toRightOf="@id/p2_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p2_armyy"
+                        android:text="Largest Army"
+                        android:textSize="10sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="2dp"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="P3"
+                    android:textColor="#616161"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/p3_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="0"
+                    android:textSize="56sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-light"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp">
+
+                    <Button
+                        android:id="@+id/p3_settlement_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="10sp"
+                        android:onClick="p3_settlement"
+                        android:text="Settlement"
+                        />
+
+                    <Button
+                        android:id="@+id/p3_city_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/p3_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p3_city"
+                        android:text="City"
+                        android:textSize="10sp"/>
+
+                    <Button
+                        android:id="@+id/p3_road_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/p3_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p3_city"
+                        android:text="Longest Road"
+                        android:textSize="10sp"/>
+
+                    <Button
+                        android:id="@+id/p3_army_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/p3_road_button"
+                        android:layout_toRightOf="@id/p3_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p3_army"
+                        android:text="Largest Army"
+                        android:textSize="10sp"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="2dp"/>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="P4"
+                    android:textColor="#616161"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:id="@+id/p4_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="4dp"
+                    android:text="0"
+                    android:textSize="56sp"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-light"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp">
+
+                    <Button
+                        android:id="@+id/p4_settlement_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:textSize="10sp"
+                        android:onClick="p4_settlement"
+                        android:text="Settlement"
+                        />
+
+                    <Button
+                        android:id="@+id/p4_city_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/p4_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p4_city"
+                        android:text="City"
+                        android:textSize="10sp"/>
+
+                    <Button
+                        android:id="@+id/p4_road_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/p4_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p4_road"
+                        android:text="Longest Road"
+                        android:textSize="10sp"/>
+
+                    <Button
+                        android:id="@+id/p4_army_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/p4_road_button"
+                        android:layout_toRightOf="@id/p4_settlement_button"
+                        android:layout_margin="2dp"
+                        android:onClick="p4_army"
+                        android:text="Largest Army"
+                        android:textSize="10sp"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_margin="2dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:onClick="reset"
+                android:text="Reset" />
+
+        </LinearLayout>
+
+
+</ScrollView>
